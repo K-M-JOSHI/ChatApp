@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.promact.chatapplication.UserActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.4"
+        android:background="#bfc0f2"
+        android:id="@+id/recyclerView1">
+
+    </android.support.v7.widget.RecyclerView>
+    <EditText
+        android:id="@+id/sendMessage"
+        android:layout_width="match_parent"
+        android:layout_weight="0.9"
+        android:layout_height="0dp"
+        android:hint="Enter message"
+        />
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:text="@string/send"/>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
